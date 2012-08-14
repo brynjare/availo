@@ -67,7 +67,7 @@ order to be consistent with the rest of the traffic flow.
 Debugging is enabled in this example to make that more clear.
 
 <pre>
-$ ./calc95 -d -g vg -y 2012 -m 4 31135,39125,83721,83659,83524
+$ ./calc95 -d -g serverexample -y 2012 -m 4 31135,39125,83721,83659,83524
 Sun Apr 01 00:00:00 CEST 2012
 Mon Apr 30 23:59:59 CEST 2012
 SELECT snmpinterface.nodeid,node.nodesysoid,snmpinterface.snmpifname,snmpinterface.snmpphysaddr 
@@ -81,7 +81,7 @@ SELECT snmpinterface.nodeid,node.nodesysoid,snmpinterface.snmpifname,snmpinterfa
 (4) 1659: eth0-00233a742b14
 [1659 =&gt; eth1]:	We found a NET-SNMP interface - reversing the in/out octets for this interface.
 (5) 1659: eth1
-/var/www/95pct/png/2012-04/vg.png
+/var/www/calc95/png/2012-04/serverexample.png
 Creating folder '/var/www/calc95/png/2012-04/'
 /usr/share/opennms/share/rrd/snmp/1437/Gi3_12-001e624a5a42/ifHCInOctets.jrb
 /usr/share/opennms/share/rrd/snmp/1437/Gi3_12-001e624a5a42/ifHCOutOctets.jrb
