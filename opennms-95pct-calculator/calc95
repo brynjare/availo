@@ -1,4 +1,4 @@
-#!/usr/bin/env /opt/groovy/groovy-2.0.1/bin/groovy
+#!/usr/bin/groovy
 
 /**
  * Groovy script that allows polling 95pct data from a set of snmpinterface ids (from OpenNMS' pgsql database)

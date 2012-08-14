@@ -16,7 +16,7 @@ github -- at -- segfault.no
 ## Credits
 
 This Groovy script is originally based on the following script:
-http://www.opennms.org/wiki/Groovy\_Scripting#Graphing\_percentiles
+http://www.opennms.org/wiki/Groovy_Scripting#Graphing_percentiles
 (Added to the wiki by User:Daniellawson at 05:40, 17 February 2009)
 
 ## Limitations
@@ -38,12 +38,12 @@ be successfully working with Groovy 2.0.1 and OpenNMS 1.9.0
 ### Help menu
 <pre>
 $ ./calc95 -h
-usage: calc95 [options] <snmp interface id> [,<more snmp interface ids>]
+usage: calc95 [options] &lt;snmp interface id&gt; [,&lt;more snmp interface ids&gt;]
  -d,--debug              Debug output
- -g,--graph <filename>   Create png graph
+ -g,--graph &lt;filename&gt;   Create png graph
  -h,--help               This help menu
- -m,--month <M|MM>       Month (defaults to the previous month)
- -y,--year <YYYY>        Year (defaults to the current year)
+ -m,--month &lt;M|MM&gt;       Month (defaults to the previous month)
+ -y,--year &lt;YYYY&gt;        Year (defaults to the current year)
 </pre>
 
 ### 95pct for multiple switch interfaces + corresponding graph
@@ -73,20 +73,20 @@ Mon Apr 30 23:59:59 CEST 2012
 SELECT snmpinterface.nodeid,node.nodesysoid,snmpinterface.snmpifname,snmpinterface.snmpphysaddr 
  FROM node,snmpinterface WHERE node.nodeid=snmpinterface.nodeid AND id IN (31135,39125,83721,83659,83524)
  ORDER BY snmpinterface.nodeid ASC, snmpinterface.snmpifname ASC
-(1) 1437: Gi3\_12-001e624a5a42
-(2) 1437: Te1\_4-001e52a937c4
-[1644 => eth4]:	We found a NET-SNMP interface - reversing the in/out octets for this interface.
+(1) 1437: Gi3_12-001e624a5a42
+(2) 1437: Te1_4-001e52a937c4
+[1644 =&gt; eth4]:	We found a NET-SNMP interface - reversing the in/out octets for this interface.
 (3) 1644: eth4-0050244567eb
-[1659 => eth0]:	We found a NET-SNMP interface - reversing the in/out octets for this interface.
+[1659 =&gt; eth0]:	We found a NET-SNMP interface - reversing the in/out octets for this interface.
 (4) 1659: eth0-00233a742b14
-[1659 => eth1]:	We found a NET-SNMP interface - reversing the in/out octets for this interface.
+[1659 =&gt; eth1]:	We found a NET-SNMP interface - reversing the in/out octets for this interface.
 (5) 1659: eth1
 /var/www/95pct/png/2012-04/vg.png
 Creating folder '/var/www/calc95/png/2012-04/'
-/usr/share/opennms/share/rrd/snmp/1437/Gi3\_12-001e624a5a42/ifHCInOctets.jrb
-/usr/share/opennms/share/rrd/snmp/1437/Gi3\_12-001e624a5a42/ifHCOutOctets.jrb
-/usr/share/opennms/share/rrd/snmp/1437/Te1\_4-001e52a937c4/ifHCInOctets.jrb
-/usr/share/opennms/share/rrd/snmp/1437/Te1\_4-001e52a937c4/ifHCOutOctets.jrb
+/usr/share/opennms/share/rrd/snmp/1437/Gi3_12-001e624a5a42/ifHCInOctets.jrb
+/usr/share/opennms/share/rrd/snmp/1437/Gi3_12-001e624a5a42/ifHCOutOctets.jrb
+/usr/share/opennms/share/rrd/snmp/1437/Te1_4-001e52a937c4/ifHCInOctets.jrb
+/usr/share/opennms/share/rrd/snmp/1437/Te1_4-001e52a937c4/ifHCOutOctets.jrb
 /usr/share/opennms/share/rrd/snmp/1644/eth4-0050244567eb/ifHCOutOctets.jrb
 /usr/share/opennms/share/rrd/snmp/1644/eth4-0050244567eb/ifHCInOctets.jrb
 /usr/share/opennms/share/rrd/snmp/1659/eth0-00233a742b14/ifHCOutOctets.jrb
