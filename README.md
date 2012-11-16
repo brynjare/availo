@@ -1,4 +1,4 @@
 availo
 ======
 
-Public projects from my work at Availo
+All Availo-related projects have been moved to https://github.com/availo
